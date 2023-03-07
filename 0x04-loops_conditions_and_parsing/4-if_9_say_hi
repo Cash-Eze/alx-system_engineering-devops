@@ -4,7 +4,7 @@ i=0
 while ((i < 10)); do
 	echo "Best School"
 	if ((i == 8)); then
-		echo "\nHi"
+		echo "Hi"
 	fi
 	((i+=1))
 done
