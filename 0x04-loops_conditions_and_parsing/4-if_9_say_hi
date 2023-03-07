@@ -3,8 +3,8 @@
 i=0
 while ((i < 10)); do
 	echo "Best School"
-	if ((i == 9)); then
-		echo "Hi"
+	if ((i == 8)); then
+		echo "\nHi"
 	fi
 	((i+=1))
 done
