@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Displays the content directory in a list format after character '-'
+# This script is displaying files in CWD in modified format
 for i in *; do
-	echo "$i" | cut -f2 -d'-'
+    echo "$i" | cut -d '-' -f 2
 done
