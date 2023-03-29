@@ -1,0 +1,4 @@
+# School server config options
+Host 54.146.67.135
+    IdentityFile ~/.ssh/school
+    Protocol 2
