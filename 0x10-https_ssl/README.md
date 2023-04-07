@@ -1,1 +1,1 @@
-http and ssl
+https & ssl
