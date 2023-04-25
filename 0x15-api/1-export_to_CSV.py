@@ -15,4 +15,8 @@ if __name__ == "__main__":
     with open('{:}.csv'.format(argv[1]), mode='w') as user_id_file:
         user_id_writer = csv.writer(user_id_file, quoting=csv.QUOTE_ALL)
         for task in r2:
-            user_id_writer.writerow([user_id, user_name, task.get('completed'), task.get('title')])
+            user_id_writer.writerow([
+                user_id, 
+                user_name, 
+                task.get('completed'), 
+                task.get('title')])
