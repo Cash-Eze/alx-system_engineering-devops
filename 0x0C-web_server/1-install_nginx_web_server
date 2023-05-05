@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Configures NGINX
-sudo apt-get update -y
-sudo apt-get install nginx -y
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo chown -R ubuntu /var/www
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
-service nginx start
+sudo service nginx start
