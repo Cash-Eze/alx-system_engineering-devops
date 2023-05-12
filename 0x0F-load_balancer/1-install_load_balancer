@@ -2,7 +2,7 @@
 #installs Haproxy and setups load balancer with round robin algorithm
 apt-get update
 apt-get -y install haproxy
-printf "\n alx
+printf "\n frontend  alx "
     bind *:80
     mode http
     default_backend web_servers
