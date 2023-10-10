@@ -7,6 +7,7 @@ def number_of_subscribers(subreddit):
         to the subreddit"""
     import requests
 
+    path = "https://www.reddit.com/r/{}/about.json"
     sub_info = requests.get(path.format(subreddit),
                             headers = {"User-Agent": "My-User-Agent"},
                             allow_redirects=False)
