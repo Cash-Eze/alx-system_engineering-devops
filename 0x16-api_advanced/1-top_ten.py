@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""Module for Api"""
-import requests
+"""Module for task1"""
 
 
 def top_ten(subreddit):
     """requests for top ten qeuries"""
+    import requests
+
     path = "https://www.reddit.com/r/{}/hot?limit=10.json"
 
     sub_info = requests.get(path.format(subreddit),
