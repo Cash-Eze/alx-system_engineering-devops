@@ -2,14 +2,14 @@
 
 """working on a module"""
 
+
 def number_of_subscribers(subreddit):
     """Queries the Reddit API and returns the number of subscribers
         to the subreddit"""
     import requests
 
-    path = "https://www.reddit.com/r/{}/about.json"
-    sub_info = requests.get(path.format(subreddit),
-                            headers = {"User-Agent": "My-User-Agent"},
+    sub_info = requests.get("https://www.reddit.com/r/{}/about.json".format(subreddit),
+                            headers={"User-Agent": "My-User-Agent"},
                             allow_redirects=False)
 
     if sub_info.status_code >= 300:
