@@ -3,13 +3,14 @@
 
 
 def recurse(subreddit,hot_list=[], count=0, after=None):
-    """Query reddit api for all hot posts of the subreddit"""
+    """Queries the Reddit API and returns all hot posts
+    of the subreddit"""
     import requests
 
     sub_info = requests.get("https://www.reddit.com/r/{}/hot.json"
                             .format(subreddit),
                             params={"count": count, "after": after},
-                            hearders={"User-Agent": "My-User-Agent"},
+                            headers={"User-Agent": "My-User-Agent"},
                             allow_redirects=False)
     if sub_info.status_code >= 400:
         return None
