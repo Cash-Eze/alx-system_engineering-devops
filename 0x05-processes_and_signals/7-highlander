@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-#This script is displaying To infinity and beyond indefinitely and catching SIGTERM
-trap "echo I am invincible!!!" SIGTERM
-i=1
-while [ $i ]
+# This script is displaying To infinity and beyond indefinitely
+# and catching SIGTERM
+
+while true
 do
     echo "To infinity and beyond"
     sleep 2
+    trap "echo I am invincible!!!" SIGTERM
 done
